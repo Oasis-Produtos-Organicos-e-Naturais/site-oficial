@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #729c76;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-hamburguer {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    background-color: white;
+    height: 4px;
+    margin: 4px 0;
+    width: 75px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px; /* Ajuste para melhor visualização em telas menores */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #729c76;
+    font-size: 30px;
+}
+
+.imageminicial {
+    background-image: url('Inicial.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    height: 250px;
+    width: 100%;
+    max-width: 1385px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.cadastro-bg {
+    background-image: url('fundo-cadastro.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #fff;
+    color: #729c76;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #dddada;
+}
+
+.planos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.plano {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.plano img {
+    width: 100%;
+    max-width: 500px;
+    min-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#video video {
+    width: 100%;
+    max-width: 1080px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bem-estar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bem-estar-item {
+    flex: 1 0 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.bem-estar-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.textosobre {
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    color: #729c76;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #729c76;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn {
+    background-color: #729c76;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 16px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #567559;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: flex;
+    }
+    
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #729c76;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+        animation: autoCloseMenu 5s forwards;
+    }
+    
+    .menu li a:active + #menu-toggle {
+        display: none;
+    }
+
+    /* Fechamento do menu após clique no link */
+    .menu li a {
+        display: block;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3px; /* Reduzindo o tamanho da fonte em dispositivos móveis */
+        padding: 0px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Itens alinhados lado a lado em dispositivos móveis */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduz o espaço entre os itens para caber melhor em telas pequenas */
+    }
+
+    header h1 img {
+        width: 100px;
+        height: 100px; /* Reduz o tamanho do logo para telas menores */
+    }
+
+    .imageminicial {
+        height: 80px; /* Reduz a altura da imagem em dispositivos móveis */
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 9px; /* Tamanho para dispositivos móveis */
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 0;
+        color: #fff;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 0px;
+    }
+
+    @keyframes autoCloseMenu {
+        0% {
+            display: flex;
+        }
+        99% {
+            display: flex;
+        }
+        100% {
+            display: none;
+        }
+    }
+}
