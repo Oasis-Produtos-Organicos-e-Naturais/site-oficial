@@ -140,7 +140,7 @@ form input[type="submit"]:hover {
 
 .planos-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
